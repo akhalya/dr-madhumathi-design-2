@@ -502,3 +502,4 @@ details p { padding: 0 50px 26px 0; margin: 0; font-size: 16px; }
 .form .btn { background: var(--wine); border-color: var(--wine); }
 .form .btn:hover { background: var(--wine-deep); border-color: var(--wine-deep); }
 .stage-tab[aria-selected="false"] .age { color: color-mix(in srgb, var(--wine) 55%, var(--paper)); }
+.site-header .brand small { display: none; }
