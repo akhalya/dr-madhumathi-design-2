@@ -63,6 +63,18 @@
       tt = setTimeout(function () { toast.classList.remove('on'); }, 2600);
     });
   });
+  // academic work: filter chips and arrows
+  var row = d.querySelector('.rec-row');
+  d.querySelectorAll('.chip').forEach(function (c) {
+    c.addEventListener('click', function () {
+      d.querySelectorAll('.chip').forEach(function (x) { x.setAttribute('aria-pressed', String(x === c)); });
+      d.querySelectorAll('.rec').forEach(function (r) { r.hidden = c.dataset.f !== 'all' && r.dataset.cat !== c.dataset.f; });
+      if (row) row.scrollLeft = 0;
+    });
+  });
+  d.querySelectorAll('[data-rec]').forEach(function (b) {
+    b.addEventListener('click', function () { if (row) row.scrollBy({ left: row.clientWidth * 0.8 * Number(b.dataset.rec), behavior: 'smooth' }); });
+  });
   // reveal
   var els = d.querySelectorAll('.rv');
   if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
