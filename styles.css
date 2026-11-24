@@ -387,3 +387,9 @@ details p { padding: 0 50px 26px 0; margin: 0; font-size: 16px; }
 .rec-nav button:hover { background: #fff; } .rec-nav button:hover svg { stroke: var(--ink); }
 @media (max-width: 900px) { .rec-row { grid-auto-columns: 78%; } .rec-nav { display: none; } }
 @media (min-width: 1081px) { .nav a[href="#book"], .nav a[href="index.html#book"] { display: none; } }
+.rec-ph.jrnl { background: linear-gradient(160deg, var(--plum), #4a2f46); border: 0; align-content: center; justify-items: start; gap: 8px; padding: 22px; text-align: left; }
+.rec-ph.jrnl b { font: 400 2.4rem/1 var(--display); color: #fff; letter-spacing: .02em; }
+.rec-ph.jrnl span { font-size: 13px; line-height: 1.4; color: rgba(255,255,255,.75); }
+.rec h3 { font-size: 1.22rem; }
+.rec-a { font-size: 13.5px; line-height: 1.5; color: #b9a9b6; margin: 0 0 14px; }
+.rec-a b { color: #fff; font-weight: 500; }
